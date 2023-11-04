@@ -1,11 +1,5 @@
-# co72646f7adb420215260a71a
-
-Quick start:
-
-```
-$ npm install
-$ npm start
-````
+View the deployed site here:
+https://stellular-jelly-a93902.netlify.app/
 
 Head over to https://vitejs.dev/ to learn more about using vite
 ## About Scrimba
