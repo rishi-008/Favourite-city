@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+    <!-- Concerns I have:
+    - I add to manually adjust the position of the cards covering the .attractions. Is there another way to do this so that I wouldn't need to manually adjust each time a change is made?
+    - What would be ways to make this webpage look more modern and clean.
+    - Are the element names that I used, appropriate? If not, what would be some standard naming conventions I can follow for web dev
+    - I realize that as I change the size of the webpage, the layout doesn't stay as I want it to but I'm not sure how to change it so it looks okay for each size change. What would I implement here to fix that?
+    - Also since i'm adjusting the position of the cards covering the attractions, if I don't set the height of the activity section then the whole activity portion becomes very long in height. So every time I make a change in card height I need to also adjust the activity section's height. 
+    - Also was wondering if I was using class and id properly  -->
+    
+
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    
+    <body onload="writeIntro()">
+        
+        <!-- HERO SECTION -->
+        <div id="hero-section">
+            <p id="intro-text"></p>
+            
+            <script>
+            // recieved from https://www.w3schools.com/howto/howto_js_typewriter.asp    
+            var i = 0;
+            var txt = 'Hey, my name is Rishi and I want to welcome you to my favorite city...';
+
+            var speed = 50;
+
+            function writeIntro() {
+                if (i < txt.length) {
+                    document.getElementById("intro-text").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(writeIntro, speed);
+                }
+            }
+            </script>
+
+            <h1 id="city-title">Toronto</h1>
+            <h2 id="city-subheading"> Experience this multicultural and vibrant city that’s the hub for innovation</h2>
+        </div>
+        
+        <!-- ACTIVITIES SECTION -->
+        <div id="activity-section">
+            
+            <h3 id="attractions-heading">Top three activities to do at Toronto</h3>
+            <h5 id="attractions-subheading">(Hint: Hover over the boxes to find out)</h5>
+            
+            <div id="attractions-images">
+                <div class="individual-attraction" id="individual-attraction-1">
+                    <img class="image-styling" src="images/cineplex.webp">
+                    <h4 class="attraction-title">Watch a nice movie in 4DX</h4>
+                    <p class="attraction-description">Cineplex is the place to go to watch a nice movie!</p>
+                </div>
+                
+                <div class="individual-attraction" id="individual-attraction-2">
+                    <img class="image-styling" src="images/ROM.jpeg">
+                    <h4 class="attraction-title">Go to an artistic marvel</h4>
+                    <p class="attraction-description">Go to the Royal Ontario Museum to be artistic marvel of the world</p>
+                </div>
+                
+                <div class="individual-attraction" id="individual-attraction-3">
+                    <img class="image-styling" src="images/cn_tower.jpeg">
+                    <h4 class="attraction-title">Go to an architectural marvel</h4>
+                    <p class="attraction-description">The CN Tower is one of the marvels of the world you must check out</p>
+                </div>
+            </div>
+            
+            <div id="hidden-section">
+                <div id="hidden-section-layout">
+                    <div class="hide-content-card" id="hide-card-1"> ?
+                    </div>
+                    <div class="hide-content-card" id="hide-card-2"> ?
+                    </div>
+                    <div class="hide-content-card" id="hide-card-3"> ?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GUIDE SECTION -->
+        <div id="guide-section">
+            <div id="guide-card">
+                <img id="guide-profile-pic" src="images/ris.png">
+                <div id="guide-description-section"> 
+                    <h3>Your guide</h3>
+                    <p id="guide-description">"Over the years I’ve found some of the best places to visit in Toronto"</p>
+                    <h4>Rishi S</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

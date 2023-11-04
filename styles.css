@@ -1,0 +1,151 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    background-image: url("images/toronto.jpeg");
+    min-height: 500px;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Cormorant;
+}
+
+#city-title {
+    width: 150px;
+    background: #457B9D;
+    border-radius: 5px;
+}
+
+#intro-text {
+    font-size: 36px;
+    text-shadow: 0px 0px 10px black;
+}
+
+#city-subheading {
+    width: 450px;
+    background: #1D3557;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#activity-section {
+    height: 420px;
+    margin-top: 0;
+    background: #F1FAEE;
+    color: #1D3557;
+    padding: 15px;
+}
+
+#attractions-images {
+    display: flex;
+    justify-content: center;
+}
+
+#cineplex-description {
+    margin: 12;
+}
+
+#hide-card-1:hover, #hide-card-2:hover, #hide-card-3:hover {
+    background-color: transparent; 
+    color: transparent;
+}
+
+.individual-attraction {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.image-styling {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#guide-description-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#guide-card {
+    width:400px;
+    margin: 0;
+    display: flex;
+    margin: 30px;
+    background: #A8DADC;
+    color: #1D3557;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 5px solid #1D3557;
+    border-radius: 10px;
+}
+
+#guide-profile-pic {
+    width: 150px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#guide-description {
+    width: 200px;
+}
+
+
+.hide-content-card {
+    background: #A8DADC;
+    width: 250px;    
+    height:320px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1D3557;
+    font-size: 100px;
+}
+
+#hidden-section {
+    position: relative;
+    top: -350px;
+}
+
+#hidden-section-layout{
+    display:flex;
+    justify-content: center;
+}
+
+.attraction-description {
+    width:100px;
+}
+
+#attractions-subheading {
+    padding-bottom: 25px;
+}
+
+.attraction-title {
+    width: 100px;
+}
+
+#attractions-heading {
+    font-size: 25px;
+}
